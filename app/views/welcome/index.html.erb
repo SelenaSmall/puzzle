@@ -1,2 +1,22 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<h1><center>DRAGGABLE PUZZLE</center></h1>
+<body>
+<style>
+  #puzzlepiece { width: 150px; height: 150px; padding: 0.5em; }
+  #box-border-layout {width: 800px; height: 600px; padding: 0px; border: 1px solid #000;}
+</style>
+  <script>
+  $(function() {
+    $( "#puzzlepiece" ).draggable({ containment: "#box-border-layout", scroll: false });
+  });
+  </script>
+
+  <center>
+  <section id="box-border-layout">
+  	Build the puzzle in here.
+
+  	<%= render 'welcome/puzzlepiece' %>
+  </section>
+  </center>
+
+</body>
+
