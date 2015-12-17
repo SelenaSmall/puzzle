@@ -1,0 +1,28 @@
+body { 
+	background: url('../images/under2.jpeg'); 
+	}
+
+.puzzlepiece { 
+	width: 150px; 
+	height: 150px; 
+	padding: 0.5em;
+	margin: 0px; 
+	border: 1px solid #000;
+	}
+
+#puzzlepiece2 { 
+	width: 150px; 
+	height: 150px; 
+	padding: 0.5em;
+	margin: 0px; 
+	}
+
+.ui-widget-header p, .ui-widget-content p { margin: 0; }
+
+#snaptarget {
+	width: 150px; 
+	height: 150px; 
+	padding: 0px; 
+	border: 1px solid #000;
+	}
+

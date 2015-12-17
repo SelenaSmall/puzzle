@@ -1,0 +1,21 @@
+<%= form_for(@puzzlepiece) do |f| %>
+  <% if @puzzlepiece.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@puzzlepiece.errors.count, "error") %> prohibited this puzzlepiece from being saved:</h2>
+
+      <ul>
+      <% @puzzlepiece.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :number %><br>
+    <%= f.number_field :number %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,8 @@
+<p id="notice"><%= notice %></p>
+
+<div id="puzzlepiece" class="ui-widget-content">
+  	<p>This puzzle piece number <%= @puzzlepiece.number %></p>
+</div>
+
+<%= link_to 'Edit', edit_puzzlepiece_path(@puzzlepiece) %> |
+<%= link_to 'Back', puzzlepieces_path %>
