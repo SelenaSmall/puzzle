@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+<body>
+ <center>
+
+  <h1><%= @puzzleskeleton.name %></h1>
+<div id="containment-wrapper">
+  <div id="snaptarget" class="ui-widget-content">
+   Build the puzzle in here.
+  </div>
+  <div id="snaptarget" class="ui-widget-content">
+   Build the puzzle in here.
+  </div>
+  <div id="snaptarget" class="ui-widget-content">
+   Build the puzzle in here.
+  </div>
+  <div id="snaptarget" class="ui-widget-content">
+   	Build the puzzle in here.
+  </div>
+
+
+  <div id="puzzlepiece1" class="ui-widget-content">
+  	<p>This is a Piece of the Puzzle</p>
+  </div>
+  <div id="puzzlepiece2" class="ui-widget-content">
+  	<p>This is a Piece of the Puzzle</p>
+  </div>
+  <div id="puzzlepiece3" class="ui-widget-content">
+  	<p>This is a Piece of the Puzzle</p>
+  </div>
+  <div id="puzzlepiece4" class="ui-widget-content">
+  	<p>This is a Piece of the Puzzle</p>
+  </div>
+</div>
+
+  <script>
+  $(function() {
+    $( "#puzzlepiece1" ).draggable({ snap: true, snap: ".ui-widget-content", snapMode: "inner" }, { containment: "#containment-wrapper", scroll: false });
+  });
+   $(function() {
+    $( "#puzzlepiece2" ).draggable({ snap: true, snap: ".ui-widget-content", snapMode: "inner" }, { containment: "#containment-wrapper", scroll: false });
+  });
+  $(function() {
+    $( "#puzzlepiece3" ).draggable({ snap: true, snap: ".ui-widget-content", snapMode: "inner" }, { containment: "#containment-wrapper", scroll: false });
+  });
+  $(function() {
+    $( "#puzzlepiece4" ).draggable({ snap: true, snap: ".ui-widget-content", snapMode: "inner" }, { containment: "#containment-wrapper", scroll: false });
+  });
+  </script>
+
+
+
+  <br>
+  <div>
+   <center>
+    <%= link_to 'Back to all puzzleskeletons', root_path %>
+  </div>
+</body>

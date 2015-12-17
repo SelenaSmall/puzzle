@@ -10,14 +10,52 @@ body {
 	border: 1px solid #000;
 	}
 
-#puzzlepiece2 { 
+#containment-wrapper { 
+	width: 95%; 
+	height: 95%; 
+	border:2px 
+	solid #ccc; 
+	padding: 10px; 
+	}
+  	h3 { 
+  	clear: left; 
+  	}
+
+#puzzlepiece1 { 
+	position: absolute;
 	width: 150px; 
 	height: 150px; 
 	padding: 0.5em;
 	margin: 0px; 
 	}
 
-.ui-widget-header p, .ui-widget-content p { margin: 0; }
+#puzzlepiece2 { 
+	position: absolute;
+	width: 150px; 
+	height: 150px; 
+	padding: 0.5em;
+	margin: 0px; 
+	}
+
+#puzzlepiece3 { 
+	position: absolute;
+	width: 150px; 
+	height: 150px; 
+	padding: 0.5em;
+	margin: 0px; 
+	}
+
+#puzzlepiece4 { 
+	position: absolute;
+	width: 150px; 
+	height: 150px; 
+	padding: 0.5em;
+	margin: 0px; 
+	}
+
+.ui-widget-header p, .ui-widget-content p { 
+	margin: 0; 
+	}
 
 #snaptarget {
 	width: 150px; 

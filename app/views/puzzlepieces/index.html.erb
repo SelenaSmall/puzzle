@@ -17,25 +17,28 @@
         <td><%= link_to 'Show', puzzlepiece %></td>
         <td><%= link_to 'Edit', edit_puzzlepiece_path(puzzlepiece) %></td>
         <td><%= link_to 'Destroy', puzzlepiece, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-      <div class="puzzlepiece" class="ui-widget-content">
-        <p>This puzzle piece number <%= puzzlepiece.number %></p>
-      </div>
+      </tr>     
     <% end %>
   </tbody>
 </table>
 
+<% @puzzlepiece.each do |puzzlepiece| %>
+  <div class="puzzlepiece" class="ui-widget-content">
+    <p>This puzzle piece number <%= puzzlepiece.number %></p>
+  </div>
+<% end %>
+
+<% @puzzlepiece.each do |puzzlepiece| %>
+  <div id="snaptarget" class="ui-widget-content">
+    <p>Build the puzzle in here.</p>
+  </div>
+<% end %>
+
 <script>
   $(function() {
-    $( ".puzzlepiece" ).draggable({ snap: true, snap: ".ui-widget-header", snapMode: "inner" }, { containment: "#box-border-layout", scroll: false });
+    $( ".puzzlepiece" ).draggable({ snap: true, snap: ".ui-widget-content", snapMode: "inner" }, { containment: "#box-border-layout", scroll: false });
   });
 </script>
-
-
-  <%= render 'welcome/background' %>
-  <%= render 'welcome/background' %>
-  <%= render 'welcome/background' %>
-  <%= render 'welcome/background' %>
 
 <br>
 

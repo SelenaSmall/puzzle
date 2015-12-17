@@ -1,9 +1,13 @@
 Rails.application.routes.draw do 
   
-  root 'puzzlepieces#index'
-  resources :puzzlepieces
+
+  root 'puzzleskeletons#index'
+  resources :puzzleskeletons do
+    resources :puzzlepieces
+  end 
   get 'welcome/index'
-  get 'puzzlepieces/mypuzzle'
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
